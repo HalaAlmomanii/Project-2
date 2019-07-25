@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbtron" style="margin-bottom:0 px;">
+    <h1>BookStore</h1>
+    <p>Free Delivery on All of our books.</p>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" >
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id= collapse_target >
+        <a class="navbar-brand"> <img src="" alt="BookStore"></a>
+        <span style="margin-right: 20%" class="navbar-text">BookStore</span>
+        <div id = "space">
+        <ul class="nav flex-row">
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#"> books
+                <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <a class="dropdown-item"> Book 1 </a> 
+                <a class="dropdown-item"> Book 2 </a> 
+                <a class="dropdown-item"> Book 3 </a>
+                <a class="dropdown-item"> Book 4 </a>
+
+
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> link2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> link3</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+<!--CREAT SIGN UP PAGE -->
+    <ul style="margin-right:20px" class="nav navbar-nav navbar-right">
+            <li style="margin-right:10px"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+    </nav>
+    <div class="jumbotron "  style="background-color: brown">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
+                            class="d-block w-30" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                  </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
+                            class="d-block w-30" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                  </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
+                            class="d-block w-30" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators"  data-slide="prev">
+                    <span class="carousel-control-prev-icon" ></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                </a>
+            </div>
+        </div>
+          <div><h1>Last relaes</h1>
+            <hr class="col-8">
+        </div>
+        <div class="row justify-content-md-center">
+           <div class="col-2" style="background-color: cadetblue">
+           <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
+           <h4>Book hghg</h4>
+           <button class="btn btn-primary btn-lg ">Add to fav</button>
+           </div>
+           <div class="col-2">
+                <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
+                <h4>Book hghg</h4>
+                <button class="btn btn-primary btn-lg ">Add to fav</button>
+           </div>
+            <div class="col-2">
+                    <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
+                    <h4>Book hghg</h4>
+                    <button class="btn btn-primary btn-lg ">Add to fav</button>
+            </div>
+            <div class="col-2">
+                    <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
+                     <h4>Book hghg</h4>
+                    <button class="btn btn-primary btn-lg ">Add to fav</button>
+            </div>
+        </div>
+</body>
+</html>
