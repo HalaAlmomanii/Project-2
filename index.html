@@ -1,122 +1,474 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="design.css">
 </head>
+
 <body>
-    <div class="jumbtron" style="margin-bottom:0 px;">
+  <div class="jumbtron" style="margin-bottom:0 px;">
     <h1>BookStore</h1>
-    <p>Free Delivery on All of our books.</p>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert">
+      Free Delivery On All Of Our BOOKS!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" >
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target" >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id= collapse_target >
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id=collapse_target>
         <a class="navbar-brand"> <img src="" alt="BookStore"></a>
         <span style="margin-right: 20%" class="navbar-text">BookStore</span>
-        <div id = "space">
-        <ul class="nav flex-row">
-        <li class="nav-item">
-            <a class="nav-link" href="#"> Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#"> books
+        <div id="space">
+          <ul class="nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#"> books
                 <span class="caret"></span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                <a class="dropdown-item"> Book 1 </a> 
-                <a class="dropdown-item"> Book 2 </a> 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <a class="dropdown-item"> Book 1 </a>
+                <a class="dropdown-item"> Book 2 </a>
                 <a class="dropdown-item"> Book 3 </a>
                 <a class="dropdown-item"> Book 4 </a>
 
 
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> link2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> link3</a>
-        </li>
-        </ul>
-    </div>
-    </div>
-<!--CREAT SIGN UP PAGE -->
-    <ul style="margin-right:20px" class="nav navbar-nav navbar-right">
-            <li style="margin-right:10px"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> link3</a>
+            </li>
           </ul>
+        </div>
+      </div>
+      <!--CREAT SIGN UP PAGE 	-->
+      <ul style="margin-right:20px" class="nav navbar-nav navbar-right">
+        <li style="margin-right:10px"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      <!-- <p> &#128218 <span id="number"> </span> </p> -->
+      <!-- <button id="total" >
+          <p>&#128218</p><span id="number"> </span>
+        </button> -->
+
+
+      <button type="button" class="btn btn-warning " data-toggle="modal" data-target="#exampleModalCenter"
+        id="total"><span style="margin-right: 5px">CART
+        </span>
+        <span>&#128218</span><span id="number"> </span>
+      </button>
+
+
     </nav>
-    <div class="jumbotron "  style="background-color: brown">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
-                            class="d-block w-30" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                  </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
-                            class="d-block w-30" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                  </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDj8qzyZG7O0fSqiNiG2J2VW98o0d4hTn2pdFJqE6jZVJb3gN"
-                            class="d-block w-30" alt="...">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators"  data-slide="prev">
-                    <span class="carousel-control-prev-icon" ></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
-                    <span class="carousel-control-next-icon" ></span>
-                </a>
-            </div>
+
+    <div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f8da8d31850141.56635831c4bf8.jpg"
+              class="d-block w-30" alt="...">
+
+          </div>
+          <div class="carousel-item">
+            <img src="https://motivationquotes.org/wp-content/uploads/2019/04/Good-friends-good-books-quotes.jpg"
+              class="d-block w-30" alt="...">
+
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://quotefancy.com/media/wallpaper/3840x2160/4056-Ernest-Hemingway-Quote-There-is-no-friend-as-loyal-as-a-book.jpg"
+              class="d-block w-30" alt="...">
+          </div>
         </div>
-          <div><h1>Last relaes</h1>
-            <hr class="col-8">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h1>Last Release <span class="badge badge-pill badge-warning">New</span></h1>
+
+
+    </div>
+
+    <div class="d-flex justify-content-around cont">
+
+      <div class="p-4 ">
+        <img src="https://covers.openlibrary.org/b/id/8179915-M.jpg" class="rounded bookItem">
+
+        <div class="information">
+          <h4>Book1</h4>
+          <h5>Come Together</h5>
+          <p>By: Anne Steve</p>
+          <p>Price:40<span>JD</span></p>
+          <p class="breif">There’s Something About Sweetie is the second book in the young adult own voices series
+            titled, Dimple and Rishi, by author Sandhya Menon. The Dimple and Rishi series is a young adult contemporary
+            romance series, where each book is a standalone. As such, you do not need to read the books in order because
+            each story will focus on a different set of characters and their story. However; they are all set in the
+            same world, and so far, there is some character overlap </p>
+          <input type="button" class="card" value="Add to Card">
         </div>
-        <div class="row justify-content-md-center">
-           <div class="col-2" style="background-color: cadetblue">
-           <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
-           <h4>Book hghg</h4>
-           <button class="btn btn-primary btn-lg ">Add to fav</button>
-           </div>
-           <div class="col-2">
-                <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
-                <h4>Book hghg</h4>
-                <button class="btn btn-primary btn-lg ">Add to fav</button>
-           </div>
-            <div class="col-2">
-                    <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
-                    <h4>Book hghg</h4>
-                    <button class="btn btn-primary btn-lg ">Add to fav</button>
-            </div>
-            <div class="col-2">
-                    <img src="https://data.whicdn.com/images/259924818/original.gif" class="img-thumbnail">
-                     <h4>Book hghg</h4>
-                    <button class="btn btn-primary btn-lg ">Add to fav</button>
-            </div>
+      </div>
+
+      <div class="p-4">
+
+        <img src="https://covers.openlibrary.org/w/id/8244596-M.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book2</h4>
+          <h5>Beats</h5>
+          <p>By:Alex Mercer</p>
+          <p>Price:35<span>JD</span></p>
+          <p class="breif">The thief Kai knows about the chemically controlled soldiers of the Eastern forces and their
+            savage, deadly nature. When a robbery attempt at Club Seven goes wrong, Kai is captured by a handler and his
+            bestial soldier-boy. She wakes up inside the military base with no idea what happened to her twin brothe
+          </p>
+          <input type="button" class="card" value="Add to Card">
         </div>
+      </div>
+      <div class="p-4">
+        <img src="https://covers.openlibrary.org/w/id/8231452-M.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book3</h4>
+          <h5>History Of Religion</h5>
+          <p>By:Shaker Alabbadi</p>
+          <p class="breif">Dragonslayer is the first book in the epic fantasy series of the same name by author Duncan
+            Hamilton. I have been so into fantasies lately and I have always been intrigued by and love books that
+            feature dragons, so I knew this was going to be right up my alley. The cover of this book drew me in
+            immediately, and it kind of reminded me of the Eragon series. Though I will say, Dragonslayer is more adult
+            and is more on the epic fantasy scale </p>
+          <p>Price:15<span>JD</span></p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+
+      <div class="p-4">
+        <img src="https://covers.openlibrary.org/b/id/5754501-M.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book4</h4>
+          <h5> Sonnets</h5>
+          <p>By:William Shakespeare</p>
+          <p class="breif">The Forever Girl Rebecca Hamilton Publication date: June 18th 2018 Genres: Fantasy, New
+            Adult, Paranormal A young descendent of a true witch, Sophia discovers her familial curse can only be cured
+            by entering a world of shifters, fae, and vampires who want her dead. Sophia’s ancestor’s body went missing
+            after a Salem Witch Trials hanging. </p>
+          <p class="price"> Price:50<span>JD</span></p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div>
+      <h1>History Books</h1>
+    </div>
+
+    <div class="d-flex justify-content-around cont">
+
+      <div class="p-4 ">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51bpOR8qigL._SL300_.jpg" class="rounded bookItem">
+
+        <div class="information">
+          <h4>Book5</h4>
+          <h5>Life of hitler</h5>
+          <p>By:steve alan</p>
+          <p> Price:<del>40<span>JD</span></del> &nbsp35<span>JD</span></p>
+          <p class="breif"> Stranger Rituals Kali Rose Schmidt Publication date: July 9th 2019 Genres: Fantasy, New
+            Adult A fighter with a venomous grudge. A monster with an immortal curse. A girl with a terrible gift. All
+            three out for blood in a land torn apart by harsh gods and holy wars. Each entwined with the other, on their
+            own quests for vengeance, and yet held together by strange links to sinister pasts. </p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+      <div class="p-4">
+
+        <img src="https://img.thriftbooks.com/api/images/l/c4756e4eff5e0495ec3d6a62c2cdf7ea4445306a.jpg"
+          class="rounded bookItem">
+        <div class="information">
+          <h4>Book6</h4>
+          <h5>The Prince</h5>
+          <p>By:Mercer sami </p>
+          <p>Price:35<span>JD</span></p>
+          <p class="breif"> Dead Sea Debbie Cassidy (Chronicles of Deadworld #3) Publication date: July 2nd 2019 Genres:
+            Adult, Post-Apocalyptic, Urban Fantasy When war knocks on the door, burying your head in the sand won’t make
+            it leave. Death called and I answered. Now Genesis is coming for us. But with the council making every
+            excuse not to listen to my warnings, there’s no other option but to plot behind their backs. </p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+      <div class="p-4">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/518XZOezryL._SL300_.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book7</h4>
+          <h5>Animal Farm</h5>
+          <p>By:Moh Alabbadi</p>
+          <p class="breif"> The Shortest Distance Between Love & Hate was an ok read. It is a young adult contemporary
+            romance standalone by Sandy Hall. I wanted to love this book so much. It has so many elements that are big
+            winners to me. I love a hate to love dynamic. In fact, it is one of my favorite. And I did really enjoy some
+            aspects of this story, but there were also some character issues that detracted from my enjoyment</p>
+          <p>Price:15<span>JD</span></p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+
+      <div class="p-4">
+        <img src="https://img.thriftbooks.com/api/images/l/be2ff900d2bfa114a6533ed1933aafaf819fbc07.jpg"
+          class="rounded bookItem">
+        <div class="information">
+          <h4>Book8</h4>
+          <h5> Dark Money</h5>
+          <p>By:Helery Klinton</p>
+          <p class="breif">The Thirteenth Guardian is the first book in the young adult trilogy by the same name by
+            author K.M. Lewis. The Thirteenth Guardian is like the DaVinci Code mashed with a re occurrence of the
+            plagues of Egypt. It is a whirlwind adventure from start to finish. I really got swept up in this book, and
+            though there was a bit much going on at times, it was a really well done novel, and it has left me excited
+            to continue on in the trilogy </p>
+          <p class="price"> Price:50<span>JD</span></p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <h1>Comic Books</h1>
+    </div>
+
+    <div class="d-flex justify-content-around cont">
+
+      <div class="p-4 ">
+        <img src="https://img.thriftbooks.com/api/images/l/8cf5a4a3e7a5177d13daeeb91288f273e1fb55c5.jpg"
+          class="rounded bookItem">
+
+        <div class="information">
+          <h4>Book9</h4>
+          <h5>What Happend</h5>
+          <p>By:Mercur Dan</p>
+
+          <p>Price:40<span>JD</span></p>
+          <p class="breif"> Rules We’re Meant to Break is young adult contemporary romance by Natalie Williamson. This
+            might sound kind of weird, but I was immediately drawn into this book because of it’s cover. It is not a
+            traditionally beautiful young adult cover, but it made me think that I would relate to the main character,
+            Amber.</p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+      <div class="p-4">
+
+        <img src="https://images-na.ssl-images-amazon.com/images/I/5155BVAqvxL._SL300_.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book10</h4>
+          <h5>The Kids</h5>
+          <p>By:Joe Hattab</p>
+          <p>Price:35<span>JD</span></p>
+          <p class="breif"> Skies of Olympus is the first book in the Immortality trials series by author Eliza Raine.
+            The Immortality trials is a unique series set up that I am really digging. </p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+      <div class="p-4">
+        <img src="https://img.thriftbooks.com/api/images/l/2d28f68a5e128c0558b07571d45fe3d2ad4f172b.jpg"
+          class="rounded bookItem">
+        <div class="information">
+          <h4>Book11</h4>
+          <h5>My Baby</h5>
+          <p>By:Sandy John</p>
+          <p class="breif"> Wolves & Monsters is the first book in the Siren Problems series by Dyan Chick. The Siren
+            problems series is a new adult paranormal romance series. I thought this was a good first book. It is a
+            little on the short side and it is very, very action packed so if you are looking for a fast paced read with
+            a second chance romance and adventure, this is going to be a great quick fix book for you </p>
+          <p> Price:<del>15<span>JD</span></del> &nbsp 5<span>JD</span></p>
+
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+
+      <div class="p-4">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51T4OTWTBGL._SL300_.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book12</h4>
+          <h5>Rainbow Fish</h5>
+          <p>By:Will Smith</p>
+          <p class="breif"> Gather the Fortunes is the second book in the young adult fantasy Crescent City series by
+            author Bryan Camp. Though you do not need to read the first book, in order to understand and enjoy the
+            second novel, I would advise it. I went into the second book without having read the first book, and I think
+            that detracted from my overall enjoyment of the story.</p>
+          <p> Price:<del>50<span>JD</span></del> &nbsp35<span>JD</span></p>
+
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div>
+      <h1> Cooking Book</h1>
+    </div>
+
+    <div class="d-flex justify-content-around cont">
+
+      <div class="p-4 ">
+        <img src="https://img.thriftbooks.com/api/images/l/652c2753656e0998aefff1b09027a91989e848b4.jpg"
+          class="rounded bookItem">
+
+        <div class="information">
+          <h4>Book13</h4>
+          <h5>De Cheief</h5>
+          <p>By: Moh Bittar</p>
+
+          <p>Price:40<span>JD</span></p>
+          <p class="breif">Michael Pollan is the author of several books, including Second Nature: A Gardener's
+            Education, A Place of My Own: The Education of an Amateur Builde</p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+      <div class="p-4">
+
+        <img src="https://img.thriftbooks.com/api/images/l/bf17ad4dedfb3e12ca78cfddfe820260a7b994b7.jpg"
+          class="rounded bookItem">
+        <div class="information">
+          <h4>Book14</h4>
+          <h5>Thug Kitchen</h5>
+          <p>By:Emad Alrasheed</p>
+          <p>Price:35<span>JD</span></p>
+          <p class="breif"> It’s a for us, by us design. That is, written by housewives and cooks for housewives and
+            cooks. The format of the recipes is simple while the content is not: Halibut and Shrimp à la Newburg; Wine
+            Sauces; Brandy Sauces and Chestnut Vegetable These are some of the recipe headings in this overstuffed tome.
+          </p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+      <div class="p-4">
+        <img src="https://img.thriftbooks.com/api/images/l/9aa70e5e21eacd0e1e7e1acf2d53cbd2704a79ad.jpg"
+          class="rounded bookItem">
+        <div class="information">
+          <h4>Book15</h4>
+          <h5>Flavor Piple</h5>
+          <p>By:Doha Ahmad</p>
+          <p class="breif">The elevation of the ‘rock ’n’ roll top chef’ started in the 1990’s, roughly ten years after
+            the term ‘Foodie’ was coined, when an American cable channel called ’The Food Network’ would broadcast
+            cooking chefs for 24 hours, day in day out</p>
+          <p> Price:<del>15<span>JD</span></del> &nbsp10<span>JD</span></p>
+
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+
+
+      <div class="p-4">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51H2DxTgnjL._SL260_.jpg" class="rounded bookItem">
+        <div class="information">
+          <h4>Book16</h4>
+          <h5>Our Recipe</h5>
+          <p>By:Ahamd Alarag</p>
+          <p class="breif">
+            The road was paved for a varying and broad spectrum of culinary books, and the number of beautifully created
+            books with a discernible love for paper, design and inspiration found their way to MENDO. </p>
+          <p class="price"> Price:50<span>JD</span></p>
+          <input type="button" class="card" value="Add to Card">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Check Out </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <script src="logic.js"></script>
 </body>
+
 </html>

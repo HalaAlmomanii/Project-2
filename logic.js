@@ -1,38 +1,42 @@
-
 console.log("hi")
-var x=0;
-var obj={Book1:35,Book2:35,Book3:35,Book4:35}
-var arr=[]
-$ (document).ready(function(){
- $(".card").on("click",function(){
-  arr.push( obj[$(this).siblings("h4").html()])
-    console.log(arr)
-//     arr[x]=arr[x].slice(0,2)
-    console.log(arr)
-        x=x+1
-        $("#number").html(x)
-        console.log(x)
-   
+var count = 0;
+var obj = { Book1: 40, Book2: 35, Book3: 15, Book4: 50, Book5: 35, Book6: 35, Book7: 15, Book8: 50, Book9: 40, Book10: 35, Book11: 5, Book12: 35, Book13: 40, Book14: 35, Book15: 10, Book16: 50 }
+var arr = []
+var result = 0;
+$(document).ready(function () {
+       $(".card").on("click", function () {
+
+              arr.push(obj[$(this).siblings("h4").html()])
 
 
-   
- })
+              count = count + 1
+              $("#number").html(count)
+              $("#number").addClass("badge  badge-pill badge-light ")
 
-})
 
-$(document).ready(function(){
-$(".col-2 > img").on("mouseover",function(){
-      $(this).parent().append("<input type=button  id='info'  value=Quick view>")
-  
+
+
+
+       })
 
 })
+
+$(document).ready(function () {
+       $(".p-4 > img").on("mouseover", function () {
+
+              if ($(this).parent().find("#info").length === 0) {
+                     $(this).parent().append("<input type=button  id='info'  value='Quick view' class='btn btn-primary'  data-toggle='modal' data-target='#exampleModal'>")
+              }
+
+
+       })
 })
 
 
 
-$(document).ready(function(){
-       $(".col-2").on("mouseleave",function(){
-            
+$(document).ready(function () {
+       $(".p-4").on("mouseleave", function () {
+
               $("#info").remove()
        })
 
@@ -41,30 +45,51 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-$(document).on('click', '#info', function() {
-       var x=$(this).siblings("h4").text()
-       // var x=$(this).siblings("div").children("h4").text()
-      console.log(x)
-       
- })
+       $(document).on('click', '#info', function () {
+
+
+              $(".modal-body").children("p").html($(this).siblings("div").children(".breif").html())
+
+
+
+       })
+
+})
+
+
+
+$(document).ready(function () {
+
+       $("#total").on("click", function () {
+              if (result === 0) {
+                     for (i = 0; i < arr.length; i++) { result = result + arr[i] }
+              }
+
+              var title = "Thank you for Shopping with us your card is  "
+              $(".modal-body").children("p").html(title + result + "JD")
+
+       })
 
 })
 
 
 
-$(document).ready(function(){
-       var result=0;
-$("#total").on("click",function(){
+$(document).ready(function () {
 
-for(i=0;i<arr.length;i++)
-{ result =result+arr[i]}
- console.log(result)
-alert("your total is" + result)
+       $(".modal-footer > button").on('click', function () {
 
+
+              arr = [];
+              result = 0;
+              x = 0;
+
+              $("#number").html("")
+
+
+
+
+       })
 
 })
-
-})
-  
