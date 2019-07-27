@@ -83,7 +83,7 @@ $(document).ready(function () {
 
               arr = [];
               result = 0;
-              x = 0;
+              count = 0;
 
               $("#number").html("")
 
